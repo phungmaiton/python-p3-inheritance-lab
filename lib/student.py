@@ -2,7 +2,9 @@
 
 from user import User
 
+
 class Student(User):
-    
-    def learn(self):
-        pass
+    knowledge = []
+
+    def learn(self, string):
+        self.knowledge.append(string)
